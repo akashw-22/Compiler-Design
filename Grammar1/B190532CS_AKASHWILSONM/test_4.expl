@@ -1,0 +1,27 @@
+FUN() { 
+    
+    read (num);
+    
+    flag = 1;
+    ans = 0;
+    do {
+        
+        read (x);
+        
+        if( flag == 0 ) {
+            flag =  1;
+            ans = ans - x;
+        }
+        else {
+            ans = ans + x;
+            flag = 0;
+        }
+        
+        num = num - 1;
+        
+        if (num == 0){
+            num = num - 1;}
+    
+    } while ( num >= 0 );
+    write (ans);
+}

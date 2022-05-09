@@ -1,0 +1,22 @@
+FUN () { 
+    read (abc);
+    read (pqr);
+    read (stu);
+    
+    if (abc >= pqr) {
+        if (pqr >= stu) { write (abc + stu); } 
+
+        else { 
+            if (abc >= stu) { write (abc + pqr); }
+            else { write ( stu + pqr ); }
+        }
+    }
+    else {
+        if(abc >= stu) { write (pqr+stu); }
+        
+        else { 
+            if ( pqr >= stu ) { write (abc + pqr); }
+            else { write ( abc + stu ); }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+FUN () { 
+    sum = 0;
+    do {
+        read ( x );
+        sum = sum + x * 2;
+    } while ( x != 0 );
+    write ( sum );
+}
